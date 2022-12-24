@@ -1,0 +1,30 @@
+Please read and follow the steps to automate this web app:
+Go to https://www.saucedemo.com/
+
+Log in to the application with the “standard_user” user.
+
+Add any product to the cart.
+
+Get the text value (name of the item – the one red highlighted) of the item you add to the cart. 
+
+Go to the cart page.
+Validate that the item name text is the same that you got in step 3.1
+Click on Checkout.
+
+Fill in the information and continue to the next page.
+
+In the “CHECKOUT: OVERVIEW” page, validate that the item name text is the same that you got in step 3.1
+Finish the order.
+Validate that you finish the order.
+You can validate that you are at the “CHECKOUT: COMPLETE!” page using that text or another one.
+
+Notes:
+
+Feel free to use the programming language, and the testing framework you want. 
+Desirable: Use Javascript.
+Remember to use a design pattern. 
+Submit your code into a GitHub repository named "automation-LT".
+When finish the automation, reply to this email with:
+The link of the GitHub's repository.
+The programming language and testing frameworks used.
+The design pattern used.
