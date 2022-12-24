@@ -40,15 +40,15 @@ public class Inventory_PageObjects {
 				//verify if the 'inputItem' matches to any elementsTexts from list created with the return of the items from inventory page
 				for(int x = 0; x < elementsTexts.size(); x++) {
 					if(elementsTexts.get(x).toString().contains(inputItem)) {
-						System.out.println(elementsTexts.get(x).toString());
+						//System.out.println(elementsTexts.get(x).toString());
 						foundElement.add(elementsTexts.get(x).toString());
 					}
 				}
-				System.out.println("Partial Item Name : " + inputItem + ", Item that has been found : " + foundElement);
+				System.out.println("Partial Item Name : " + inputItem + " / Item that has been found : " + foundElement);
 				
 				//add values from elements found to public list to compare at the cart
 				elementsTextAddedToCart = foundElement;
-				System.out.println(elementsTextAddedToCart);
+				//System.out.println(elementsTextAddedToCart);
 	}
 	
 	//SJM - 24/12/22 - procedure to add items to cart based on the list of elements found
