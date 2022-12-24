@@ -5,7 +5,7 @@
     <classes>
       <class name="leanTech.automation_LT.Test.MainTest">
         <methods>
-          <include name="selectBackPackItem"/>
+          <include name="selectNoneItemFound"/>
         </methods>
       </class> <!-- leanTech.automation_LT.Test.MainTest -->
     </classes>

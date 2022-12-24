@@ -44,16 +44,25 @@ public class Checkout_PageObjects {
 		//receive the list with the name of the items that have been added to the cart at inventory
 		List<String> inventoryItems = Inventory_PageObjects.elementsTextAddedToCart;
 		
-		//Get elements from elements collection and add into array
-		for(int i = 0; i < checkoutElements.size(); i++) {
-			checkoutItems.add(checkoutElements.get(i).text());
-			//System.out.println(elements.get(i).toString());
+		if(!checkoutElements.isEmpty()) { 
+			//Get elements from elements collection and add into array
+			for(int i = 0; i < checkoutElements.size(); i++) {
+				checkoutItems.add(checkoutElements.get(i).text());
+				//System.out.println(elements.get(i).toString());
+			}
+			Assert.assertEquals(checkoutItems, inventoryItems);
+		} else {
+			Assert.assertEquals(checkoutItems, inventoryItems);
+			System.out.println("The Checkout Cart is Empty");
 		}
-	
-		Assert.assertEquals(checkoutItems, inventoryItems);
 	}
 	
 	public static void validateCheckoutComplete() {
+		//validate header text
+		SelenideElement headerText = $("#header_container .header_secondary_container .title");
+		headerText.should(Condition.exist);
+		headerText.shouldHave(Condition.text("CHECKOUT: COMPLETE!"));
+		//validate success message text
 		SelenideElement successCheckout = $("#checkout_complete_container");
 		successCheckout.should(Condition.exist);
 		// validate if the text match with the expected text

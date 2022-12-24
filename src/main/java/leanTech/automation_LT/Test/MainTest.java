@@ -9,7 +9,7 @@ import leanTech.automation_LT.PageObjects.Login_PageObjects;
 import leanTech.automation_LT.PageObjects.ShoppingCart_PageObjects;
 
 public class MainTest  {
-
+	/*
 	@Test
 	//SJM - 24/12/22 - This will look for Backpack item and will add the item from inventory to the cart
 	public void selectBackPackItem() {
@@ -24,6 +24,16 @@ public class MainTest  {
 	public void selectMultipleItems() {
 		Login_Test.login();
 		Inventory_Test.addItemInventory("Sauce Labs");
+		ShoppingCart_Test.CartItems();
+		Checkout_Test.doCheckout();
+	}
+	*/
+	
+	@Test
+	//SJM - 24/12/22 - This will look for 'ASD' items and will add all the items with sauce labs name from inventory to the cart
+	public void selectNoneItemFound() {
+		Login_Test.login();
+		Inventory_Test.addItemInventory("ASD");
 		ShoppingCart_Test.CartItems();
 		Checkout_Test.doCheckout();
 	}

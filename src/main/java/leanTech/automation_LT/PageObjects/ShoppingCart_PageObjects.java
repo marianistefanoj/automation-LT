@@ -35,7 +35,6 @@ public class ShoppingCart_PageObjects {
 				cartItems.add(cartElements.get(i).text());
 				//System.out.println(elements.get(i).toString());
 			}
-			
 			//assert if the two lists matches
 			Assert.assertEquals(cartItems, inventoryItems);
 		}

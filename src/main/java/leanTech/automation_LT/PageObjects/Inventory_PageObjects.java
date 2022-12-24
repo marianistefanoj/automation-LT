@@ -44,11 +44,15 @@ public class Inventory_PageObjects {
 						foundElement.add(elementsTexts.get(x).toString());
 					}
 				}
-				System.out.println("Partial Item Name : " + inputItem + " / Item that has been found : " + foundElement);
 				
 				//add values from elements found to public list to compare at the cart
 				elementsTextAddedToCart = foundElement;
 				//System.out.println(elementsTextAddedToCart);
+				if(!foundElement.isEmpty()) {
+					System.out.println("Partial Item Name : " + inputItem + " / Item that has been found : " + foundElement);
+				} else {
+					System.out.println("No items have been found using the current text: " + inputItem);
+				}
 	}
 	
 	//SJM - 24/12/22 - procedure to add items to cart based on the list of elements found
@@ -71,6 +75,8 @@ public class Inventory_PageObjects {
 				//validate if the button after clicked has the label 'REMOVE' instead 'ADD TO CART', it means that the item has been added
 				addToCartButton.shouldHave(Condition.exactText("REMOVE"));
 			}
+		} else {
+			System.out.println("No items have been added to the cart");
 		}
 	}
 	
