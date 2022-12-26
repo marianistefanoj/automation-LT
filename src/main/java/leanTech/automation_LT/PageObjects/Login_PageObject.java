@@ -5,7 +5,7 @@ import static com.codeborne.selenide.Selenide.*;
 
 import com.codeborne.selenide.Selenide;
 
-public class Login_PageObjects {
+public class Login_PageObject {
 
 	public static String main_url = "https://www.saucedemo.com/";
 	private static String userName = "standard_user";

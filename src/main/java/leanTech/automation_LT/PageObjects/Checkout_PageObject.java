@@ -13,7 +13,7 @@ import com.codeborne.selenide.SelenideElement;
 
 import leanTech.automation_LT.Test.Inventory_Test;
 
-public class Checkout_PageObjects {
+public class Checkout_PageObject {
 
 	public static void firstName(String name) {
 		$("#first-name").setValue(name);
@@ -42,7 +42,7 @@ public class Checkout_PageObjects {
 		List<String> checkoutItems = new ArrayList<String>();
 		
 		//receive the list with the name of the items that have been added to the cart at inventory
-		List<String> inventoryItems = Inventory_PageObjects.elementsTextAddedToCart;
+		List<String> inventoryItems = Inventory_PageObject.elementsTextAddedToCart;
 		
 		if(!checkoutElements.isEmpty()) { 
 			//Get elements from elements collection and add into array

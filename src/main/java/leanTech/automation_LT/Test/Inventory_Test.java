@@ -12,15 +12,15 @@ import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
 
-import leanTech.automation_LT.PageObjects.Inventory_PageObjects;
+import leanTech.automation_LT.PageObjects.Inventory_PageObject;
 
 public class Inventory_Test {
 	
 	public static void addItemInventory(String item) {
 		//verify if contains an item that matches with the name: ex Backpack > Sauce Labs Backpack
-		Inventory_PageObjects.validateInventoryItem(item);
+		Inventory_PageObject.validateInventoryItem(item);
 		//if contains will add the item to the cart
-		Inventory_PageObjects.addElementoToCart();
+		Inventory_PageObject.addElementoToCart();
 	}
 	
 

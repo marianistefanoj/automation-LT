@@ -11,7 +11,7 @@ import org.testng.Assert;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.ElementsCollection;
 
-public class ShoppingCart_PageObjects {
+public class ShoppingCart_PageObject {
 	
 		public static void clickButtonCart() {
 			$("#shopping_cart_container a").click();
@@ -28,7 +28,7 @@ public class ShoppingCart_PageObjects {
 			List<String> cartItems = new ArrayList<String>();
 			
 			//receive the list with the name of the items that have been added to the cart at inventory
-			List<String> inventoryItems = Inventory_PageObjects.elementsTextAddedToCart;
+			List<String> inventoryItems = Inventory_PageObject.elementsTextAddedToCart;
 			
 			//Get elements from elements collection and add into array
 			for(int i = 0; i < cartElements.size(); i++) {

@@ -16,7 +16,7 @@ import com.codeborne.selenide.SelenideElement;
 import com.codeborne.selenide.conditions.ExactText;
 
 
-public class Inventory_PageObjects {
+public class Inventory_PageObject {
 
 	
 	//the list that later will be compared at ShoppingCart_PageObjects
