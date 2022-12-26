@@ -1,7 +1,7 @@
 - To Run:
 > import the project at eclipse
 > when the project is open, verify if it has downloaded the dependencies (all jars are dependencies)
-> is necessary to have testNG eclipse 'installed' at eclipse to run
+> is necessary to have testNG 'installed' eclipse (from eclipse marketplace) to run
 > MainTest.java is used to run the test
 
 > There are three tests

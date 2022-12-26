@@ -4,9 +4,6 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import leanTech.automation_LT.PageObjects.Inventory_PageObject;
-import leanTech.automation_LT.PageObjects.Login_PageObject;
-import leanTech.automation_LT.PageObjects.ShoppingCart_PageObject;
 
 public class MainTest  {
 	
@@ -19,7 +16,7 @@ public class MainTest  {
 		Checkout_Test.doCheckout();
 	}
 	
-	/*
+	
 	@Test
 	//SJM - 24/12/22 - This will look for Sauce Labs items and will add all the items with sauce labs name from inventory to the cart
 	public void selectMultipleItems() {
@@ -38,5 +35,5 @@ public class MainTest  {
 		ShoppingCart_Test.CartItems();
 		Checkout_Test.doCheckout();
 	}
-	*/
+	
 }
